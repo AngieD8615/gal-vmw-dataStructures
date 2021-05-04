@@ -27,11 +27,11 @@ public class LinkedList {
         }
         return cur;
     }
-    public _Node get(int index) {
+    public _Node get(int num) {
         _Node cur = head;
         int count = 1;
         while (cur != null) {
-            if (count == index) {
+            if (count == num) {
                 return cur;
             }
             cur = cur.next;
@@ -39,7 +39,6 @@ public class LinkedList {
         }
         throw new IndexOutOfBoundsException();
     }
-
     public int contains(_Node node) {
         _Node cur = head;
         int index = 0;
@@ -52,7 +51,26 @@ public class LinkedList {
         }
         return -1;
     }
-
+    public void delete(_Node node) {
+        _Node cur = null;
+        _Node next = head;
+        while (!next.equals(node)) {
+            cur = next;
+            next = next.next;
+        }
+        cur.next = next.next;
+    }
+    public void delete(int num) {
+        _Node cur = null;
+        _Node next = head;
+        int count = 1;
+        while (count != num) {
+            cur = next;
+            next = next.next;
+            count++;
+        }
+        cur.next = next.next;
+    }
 }
 class _Node {
     Object object;
@@ -61,4 +79,19 @@ class _Node {
         this.object = object;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
