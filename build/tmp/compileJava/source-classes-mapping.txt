@@ -1,0 +1,10 @@
+StacksAndQueues/Node.java
+ StacksAndQueues.Node
+StacksAndQueues/Queue.java
+ StacksAndQueues.Queue
+LinkedList/LinkedList.java
+ LinkedList.LinkedList
+LinkedList/_Node.java
+ LinkedList._Node
+StacksAndQueues/Stack.java
+ StacksAndQueues.Stack
