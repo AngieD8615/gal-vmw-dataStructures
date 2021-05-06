@@ -1,2 +1,6 @@
-LinkedListTest.java
- LinkedListTest
+LinkedList/LinkedListTest.java
+ LinkedList.LinkedListTest
+StacksAndQueuesTest/QueueTest.java
+ StacksAndQueuesTest.QueueTest
+StacksAndQueuesTest/StacksTest.java
+ StacksAndQueuesTest.StacksTest

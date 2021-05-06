@@ -1,3 +1,5 @@
+package LinkedList;
+
 public class LinkedList {
     _Node head;
     _Node tail;

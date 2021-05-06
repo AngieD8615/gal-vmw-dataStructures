@@ -1,3 +1,5 @@
+package LinkedList;
+
 class _Node {
     Object object;
     _Node next;
