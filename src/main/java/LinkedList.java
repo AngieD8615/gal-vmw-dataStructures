@@ -1,19 +1,30 @@
 public class LinkedList {
     _Node head;
+    _Node tail;
+    int size = 0;
+
     public boolean isEmpty() {
         return head == null;
     }
     public void add (_Node newNode) {
         if (head == null) {
             head = newNode;
-            return;
+        } else {
+            _Node cur = head;
+            while (cur.next != null) {
+                cur = cur.next;
+            }
+            cur.next = newNode;
         }
-        _Node cur = head;
-        while (cur.next != null) {
-            cur = cur.next;
-        }
-        cur.next = newNode;
+        size++;
     }
+//    public void addFirst() {
+//
+//    }
+//    public ArrayList<Object> toArray() {
+//        return new ArrayList<>();
+//    }
+
     public _Node getFirst() {
         return head;
     }
@@ -59,6 +70,7 @@ public class LinkedList {
             next = next.next;
         }
         cur.next = next.next;
+        size--;
     }
     public void delete(int num) {
         _Node cur = null;
@@ -70,15 +82,10 @@ public class LinkedList {
             count++;
         }
         cur.next = next.next;
+        size--;
     }
 }
-class _Node {
-    Object object;
-    _Node next;
-    public _Node(Object object) {
-        this.object = object;
-    }
-}
+
 
 
 
